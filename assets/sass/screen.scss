@@ -1,0 +1,154 @@
+html,body {
+height: 100%;
+}
+
+body {
+background-color: $w;
+@include font(sans);
+overflow: auto;
+}
+
+form {
+margin: 0;
+}
+
+h1 {
+border-bottom: 2px solid;
+@include font(sans);
+margin-bottom: 15px;
+padding-bottom: 0;
+}
+
+
+#uicell {
+width: 25em;
+	
+	th {
+	width: 6em;
+	text-align: right;
+	padding-right: 0.5em;
+	border: 1px solid black;
+	border-width: 0 1px 1px 0;
+	}
+
+	td {
+	padding: 0 0 0 0.5em;
+
+		&.pal {
+		padding: 0 3em;
+		}
+
+	}
+
+	#gobuttons {
+
+		td {
+		height: 1.5em;
+		}
+
+	}
+
+}
+
+input,
+#input a {
+font: 0.85em "Andale Mono", Courier, monospace;
+}
+
+#input,
+#output {
+margin: 0 0 1em;
+}
+
+#input {
+
+	td {
+	white-space: nowrap;
+	}
+
+	a {
+	border: 2px outset silver;
+	background: silver;
+	padding: 1px 0.25em;
+	cursor: pointer;
+	}
+
+	.coltype {
+	background: #EEE;
+	border-style: inset;
+	}
+
+}
+
+#output {
+
+	input {
+	border: 2px solid white;
+	border-width: 0 2px;
+	}
+
+	td{
+
+		&.text {
+		border-bottom: 1px dotted silver;
+		}
+
+	}
+
+}
+
+#watercell {
+width: 75px;
+background: silver;
+padding: 0;
+}
+
+#grid {
+background: black;
+border: 1px solid black;
+border-width: 0 1px 1px 0;
+margin: 5px 4px;
+	
+	td {
+	height: 11px;
+	width: 11px;
+	padding: 0;
+	line-height: 11px;
+
+		a {
+		display: block;
+		height: 10px;
+		width: 10px;
+		line-height: 10px;
+		border: 1px solid black;
+		border-width: 1px 0 0 1px;
+		}
+
+	}
+
+}
+
+
+#textcell {
+
+	p {
+	margin: 0;
+	padding: 0 1em 1em 1.5em;
+	}
+
+}
+
+#footer {
+color: #999;
+font: italic 75% sans-serif;
+	
+	p {
+	margin: 0 0 1em 0;
+	}
+
+	img {
+	float: right;
+	margin: 0 0 0.5em 2em;
+	}
+
+}

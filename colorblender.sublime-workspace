@@ -1,0 +1,793 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ta",
+				"ta-c\ttext-align: center;"
+			],
+			[
+				"pos",
+				"pos-a\tposition: absolute;"
+			],
+			[
+				"d",
+				"d-b\tdisplay: block;"
+			],
+			[
+				"h",
+				"h\theight"
+			],
+			[
+				"str",
+				"stroke-width"
+			],
+			[
+				"success",
+				"successBubbleAll"
+			],
+			[
+				"succ",
+				"successBubbleTail"
+			],
+			[
+				"ALPin",
+				"ALpings"
+			],
+			[
+				"AL",
+				"ALping2"
+			],
+			[
+				"ALp",
+				"ALping1"
+			],
+			[
+				"on",
+				"onComplete"
+			],
+			[
+				"st",
+				"stroke-width"
+			],
+			[
+				"po",
+				"pos-a\tposition: absolute;"
+			],
+			[
+				"ante",
+				"antennaRing"
+			],
+			[
+				"mes",
+				"messageField"
+			],
+			[
+				"em",
+				"emailField"
+			],
+			[
+				"las",
+				"lastNameField"
+			],
+			[
+				"firs",
+				"firstNameField"
+			],
+			[
+				"puncBRs",
+				"puncBRstop"
+			],
+			[
+				"submit",
+				"submitTextLetters"
+			],
+			[
+				"to",
+				"trfo\ttransform-origin"
+			],
+			[
+				"list",
+				"list-n\tlist-style-type: none;"
+			],
+			[
+				"user",
+				"userZIP"
+			],
+			[
+				"userC",
+				"userCity"
+			],
+			[
+				"message",
+				"messageVal"
+			],
+			[
+				"email",
+				"emailVal"
+			],
+			[
+				"r",
+				"rows\tAttr"
+			],
+			[
+				"di",
+				"d-ib+\tdisplay: inline-block;\n*display: inline;\n*zoom: 1;"
+			],
+			[
+				"text",
+				"text-center"
+			],
+			[
+				"ba",
+				"bga-f\tbackground-attachment: fixed;"
+			],
+			[
+				"t",
+				"title\tAttr"
+			],
+			[
+				"background",
+				"background-position"
+			],
+			[
+				"popp",
+				"poppered"
+			],
+			[
+				"next",
+				"nextBtnLeft"
+			],
+			[
+				"marg",
+				"margin-left: "
+			],
+			[
+				"brand",
+				"brand_blue-dark"
+			],
+			[
+				"c",
+				"center"
+			],
+			[
+				"tex",
+				"text-align: "
+			],
+			[
+				"margin",
+				"margin-top: "
+			],
+			[
+				"brand_yell",
+				"brand_yellow-lite"
+			],
+			[
+				"lig",
+				"lighten\tSass-function"
+			],
+			[
+				"back",
+				"background-color: "
+			],
+			[
+				"padding",
+				"padding: "
+			],
+			[
+				"mar",
+				"margin: "
+			],
+			[
+				"padd",
+				"padding: "
+			],
+			[
+				"font",
+				"font-weight: "
+			],
+			[
+				"border",
+				"border-bottom: "
+			],
+			[
+				"col",
+				"col-sm-10"
+			],
+			[
+				"grid",
+				"grid__col-10"
+			],
+			[
+				"margi",
+				"margin"
+			],
+			[
+				"pan",
+				"panel-4"
+			],
+			[
+				"pane",
+				"panel-3"
+			],
+			[
+				"panel",
+				"panel-1"
+			],
+			[
+				"flex",
+				"flex-grow"
+			],
+			[
+				"hero",
+				"heroVids_height"
+			],
+			[
+				"dis",
+				"display"
+			],
+			[
+				"re",
+				"relative"
+			],
+			[
+				"bl",
+				"block"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"exhi",
+				"exhibit-link"
+			],
+			[
+				"trans",
+				"transall"
+			],
+			[
+				"author",
+				"authorImg"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"empty",
+				"emptyOverlay"
+			],
+			[
+				"overlay",
+				"overlayContent"
+			],
+			[
+				"target",
+				"targetOverlay"
+			],
+			[
+				"fo",
+				"for\tAttr"
+			],
+			[
+				"usersc",
+				"usersc"
+			],
+			[
+				"new",
+				"newListType"
+			],
+			[
+				"newLi",
+				"newListName"
+			],
+			[
+				"edit",
+				"edit-list-form"
+			],
+			[
+				"font-",
+				"font-condensed"
+			],
+			[
+				"tumb",
+				"tumbleweed"
+			],
+			[
+				"scale",
+				"scaleX"
+			],
+			[
+				"action",
+				"action-label"
+			],
+			[
+				"col-",
+				"col-md-8"
+			],
+			[
+				"div",
+				"div"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"item",
+				"itemType"
+			],
+			[
+				"op",
+				"option\tTag"
+			],
+			[
+				"lis",
+				"listInfo"
+			],
+			[
+				"targ",
+				"targOverlay"
+			],
+			[
+				"out",
+				"outline"
+			],
+			[
+				"ele",
+				"elemObj"
+			],
+			[
+				"rg",
+				"rgba(r,g,b,a)"
+			],
+			[
+				"elem",
+				"elemType"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"backgroun",
+				"background-size"
+			],
+			[
+				"brand_",
+				"brand_green-lite"
+			],
+			[
+				"doc",
+				"docBody"
+			],
+			[
+				"line",
+				"line-height"
+			],
+			[
+				"i",
+				"italic"
+			],
+			[
+				"brand_gra",
+				"brand_gray-1"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 299.0,
+		"last_filter": "htm",
+		"selected_items":
+		[
+			[
+				"htm",
+				"HTML: Encode Special Characters"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"settings",
+				"Preferences: Package Control Settings – User"
+			],
+			[
+				"syntax",
+				"Preferences: Settings – Syntax Specific"
+			],
+			[
+				"synt",
+				"Preferences: Settings – Syntax Specific"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"html",
+				"HTML: Encode Special Characters"
+			],
+			[
+				"",
+				"Grunt"
+			],
+			[
+				"sanit",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"scr",
+				"Scratch Pad"
+			],
+			[
+				"pac",
+				"Package Control: Discover Packages"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"inat",
+				"Package Control: Advanced Install Package"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: scr",
+				"Package Control: Discover Packages"
+			],
+			[
+				"Pac",
+				"Preferences: Browse Packages"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"color",
+				"Colorsublime: Browse Themes"
+			],
+			[
+				"PAC",
+				"Package Control: Install Package"
+			],
+			[
+				"grun",
+				"Grunt"
+			],
+			[
+				"gr",
+				"Grunt"
+			],
+			[
+				"grunt",
+				"Grunt"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"grut",
+				"Grunt: Kill Running Tasks"
+			],
+			[
+				"less",
+				"Set Syntax: LESS"
+			],
+			[
+				"packages",
+				"Preferences: Browse Packages"
+			],
+			[
+				"ftp",
+				"Preferences: Package Control Settings – Default"
+			]
+		],
+		"width": 524.0
+	},
+	"console":
+	{
+		"height": 266.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"grunt",
+			"npm install",
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"grunt"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/joepayton/Projects/GIT Repos/colorblender"
+	],
+	"file_history":
+	[
+		"/Users/joepayton/Projects/GIT Repos/spacecity.us/assets/sass/branding.scss",
+		"/Users/joepayton/Projects/GIT Repos/spacecity.us/inc/main-nav.php",
+		"/Users/joepayton/Projects/GIT Repos/spacecity.us/inc/head.php",
+		"/Users/joepayton/Projects/GIT Repos/spacecity.us/index.php",
+		"/Users/joepayton/Projects/GIT Repos/spacecity.us/inc/header.php",
+		"/Users/joepayton/Projects/GIT Repos/spacecity.us/package.json",
+		"/Users/joepayton/Projects/GIT Repos/spacecity.us/gruntfile.js",
+		"/Users/joepayton/Projects/GIT Repos/spacecity.us/.gitignore",
+		"/Users/joepayton/Projects/GIT Repos/spacecity.us/composer.lock",
+		"/Users/joepayton/Library/Mail/V3/MailData/Signatures/B6E5AF95-1B9B-416D-B4D3-7223B54B3B4F.mailsignature",
+		"/Users/joepayton/Projects/GIT Repos/spacecity.us/assets/sass/screen.scss",
+		"/Users/joepayton/Projects/GIT Repos/spacecity.us/ajax/send-mail.php",
+		"/Users/joepayton/Projects/GIT Repos/spacecity.us/inc/footer.php",
+		"/Users/joepayton/Projects/GIT Repos/spacecity.us/inc/global.php",
+		"/Users/joepayton/Projects/GIT Repos/spacecity.us/inc/loading-overlay.php",
+		"/Users/joepayton/Projects/GIT Repos/spacecity.us/assets/img/logo.svg",
+		"/Users/joepayton/Projects/GIT Repos/spacecity.us/assets/img/client/wilson-printing-logo.svg",
+		"/Users/joepayton/Projects/GIT Repos/spacecity.us/assets/img/client/harc-logo.svg",
+		"/Users/joepayton/Projects/GIT Repos/spacecity.us/assets/img/client/dork-buzz-logo.svg",
+		"/Users/joepayton/Projects/GIT Repos/spacecity.us/assets/img/client/clissold-properties-logo.svg",
+		"/Users/joepayton/Projects/GIT Repos/spacecity.us/assets/img/client/brutus-logo.svg",
+		"/Users/joepayton/Projects/GIT Repos/spacecity.us/assets/img/transmit-button.svg",
+		"/Users/joepayton/Projects/GIT Repos/spacecity.us/assets/img/transmit-button-scrap.svg",
+		"/Users/joepayton/Projects/GIT Repos/spacecity.us/sitemap.xml",
+		"/Users/joepayton/Projects/GIT Repos/spacecity.us/assets/img/space-capsule.svg",
+		"/Users/joepayton/Projects/GIT Repos/spacecity.us/assets/img/astronaut.svg",
+		"/Users/joepayton/Projects/GIT Repos/spacecity.us/assets/img/satellite.svg",
+		"/Users/joepayton/Projects/GIT Repos/spacecity.us/assets/sass/fonts.scss",
+		"/Users/joepayton/Projects/GIT Repos/spacecity.us/assets/js/polyfills/requestanimationframe.polyfill.js",
+		"/Users/joepayton/Projects/GIT Repos/spacecity.us/composer.json",
+		"/Users/joepayton/Projects/GIT Repos/spacecity.us/inc/medoo.php",
+		"/Users/joepayton/Projects/GIT Repos/spacecity.us/assets/img/icon/twitter.svg",
+		"/Users/joepayton/Projects/GIT Repos/spacecity.us/assets/img/icon/facebook.svg",
+		"/Users/joepayton/Projects/GIT Repos/spacecity.us/assets/sass/mixins.scss",
+		"/Users/joepayton/Projects/GIT Repos/spacecity.us/assets/sass/compile.scss",
+		"/Users/joepayton/Projects/GIT Repos/spacecity.us/assets/js/plugins.js",
+		"/Users/joepayton/Projects/GIT Repos/spacecity.us/assets/img/icon/heart.svg",
+		"/Users/joepayton/Projects/GIT Repos/spacecity.us/assets/css/style.min.css",
+		"/Users/joepayton/Projects/GIT Repos/spacecity.us/assets/css/style.css",
+		"/Users/joepayton/Projects/GIT Repos/baseline/package.json",
+		"/Users/joepayton/Projects/GIT Repos/baseline/gruntfile.js",
+		"/Users/joepayton/Projects/GIT Repos/baseline/Vagrantfile",
+		"/Users/joepayton/Projects/GIT Repos/baseline/inc/head.php",
+		"/Users/joepayton/Projects/GIT Repos/baseline/assets/sass/fonts.scss",
+		"/Users/joepayton/Projects/GIT Repos/baseline/inc/header.php",
+		"/Users/joepayton/Projects/GIT Repos/baseline/inc/footer.php",
+		"/Users/joepayton/Projects/GIT Repos/baseline/assets/js/plugins.js",
+		"/Users/joepayton/Projects/GIT Repos/baseline/assets/sass/mixins.scss",
+		"/Users/joepayton/Projects/GIT Repos/baseline/index.php",
+		"/Users/joepayton/Projects/GIT Repos/baseline/assets/sass/screen.scss",
+		"/Users/joepayton/Projects/GIT Repos/baseline/assets/css/style.min.css",
+		"/Users/joepayton/Projects/GIT Repos/baseline/assets/css/style.css",
+		"/Users/joepayton/Projects/GIT Repos/baseline/node_modules/jquery/dist/jquery.js",
+		"/Users/joepayton/Projects/GIT Repos/baseline/assets/js/libs/modernizr-custom.js",
+		"/Users/joepayton/Projects/GIT Repos/baseline/assets/sass/compile.scss",
+		"/Users/joepayton/Projects/GIT Repos/baseline/assets/sass/branding.scss",
+		"/Users/joepayton/Projects/GIT Repos/baseline/assets/css/compile.scss",
+		"/Users/joepayton/Projects/GIT Repos/baseline/assets/css/fonts.scss",
+		"/Users/joepayton/Projects/GIT Repos/baseline/node_modules/bootstrap/Gruntfile.js",
+		"/Users/joepayton/Projects/GIT Repos/baseline/.gitignore",
+		"/Users/joepayton/Projects/GIT Repos/baseline/inc/global.php",
+		"/Users/joepayton/Projects/GIT Repos/baseline/inc/medoo.php",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/js/plugins/jquery.debounce.js",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/js/plugins/jquery.equalheights.js",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/about/index.php",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/index.php",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/inc/estimation-calc.php",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/inc/contact-overlay.php",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/black/index.php",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/inc/subscribe-form.php",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/blog-views/blog-sidebar.php",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/blog/index.php",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/css/application.scss",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/gruntfile.js",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/package.json",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/work/index.php",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/inc/work-functions.php",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/css/global.scss",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/blended-learning/index.php",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/inc/footer.php",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/inc/people-grid.php",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/about.php",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/less/media-queries.less",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/js/scripts.js",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/less/screen.less",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/less/mixins.less",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/inc/main-nav.php",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/inc/header.php",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/inc/social.php",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/css/screen.scss",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/css/mixins.scss",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/css/updates.scss",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/css/media-queries.scss",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/css/typography.scss",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/css/print.scss",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/css/lightcase.scss",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/css/animations.scss",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/js/plugins/jquery.events.touch.js",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/css/bootstrap.scss",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/css/grid-helpers.scss",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/css/lesshat.scss",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/css/swiper.scss",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/css/bootstrap-slider.scss",
+		"/Users/joepayton/Library/Application Support/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/js/libs/popper.js",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/js/libs/bootstrap.js",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/less/grid-helpers.less",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/css/compile.scss",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/less/compile.less",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/index-OLD-USE-IT-FOR-SCRAP.php",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/img/blended-learning/circles.svg",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/less/reflex/mixins.less",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/inc/head.php",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/inc/global.php",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/js/polyfills/pointer_events_polyfill.js",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/js/plugins/debounce.js",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/blog/post.php",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/work/work-sample.php",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/ajax/show-person.php",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/img/icons/chevron-right.svg",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/less/bootstrap.less",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/less/global.less",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/inc/browser-overlay.php",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/support.css",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/blog-views/white-paper.php",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/inc/download-overlay.php",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/work.php",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/ajax/templates/download-email-external.php"
+	],
+	"find":
+	{
+		"height": 39.0
+	},
+	"find_in_files":
+	{
+		"height": 101.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "colorblender.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 701.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 251.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
