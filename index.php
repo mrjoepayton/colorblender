@@ -20,21 +20,25 @@ $bodyClass = "home";
 	<div class="row">
 		
 		<div id="uicell" class="col8">
-		
-			<h2>Format</h2>
-			<a onclick="setType('hex');" id="hex" class="coltype">Hex</a>
-			<a onclick="setType('rgbd');" id="rgbd">RGB</a>
-			<a onclick="setType('rgbp');" id="rgbp">RGB%</a>
 
+			<h2>Color 1</h2>
+			<div class="container">
+				<div id="color_1" class="row">
+					<input type="text" data-num="1" class="color-field col" />
+					<div class="color-square col"></div>
+				</div>
+			</div>
 
-			<h2 id="l1">Color 1</h2>
-			<input type="text" id="col0" size="19" onblur="colorStore('0');" />
+			<h2>Color 2</h2>
+			<div class="container">
+				<div id="color_2" class="row">
+					<input type="text" data-num="2" class="color-field col" />
+					<div class="color-square col"></div>
+				</div>
+			</div>
 
-			<h2 id="l2">Color 2</h2>
-			<input type="text" id="col1" size="19" onblur="colorStore('1');" />
-
-			<h2>Midpoints</h2>
-			<select id="steps" onchange="updateHash();">
+			<h2>How Many Steps?</h2>
+			<select id="steps">
 				<option value="1">1</option>
 				<option value="2">2</option>
 				<option value="3">3</option>
@@ -48,8 +52,8 @@ $bodyClass = "home";
 			</select>
 
 			<div id="gobuttons">
-				<a onclick="drawPalette();">blend</a>
-				<a onclick="init(0);">clear</a>
+				<button id="blend-btn" class="btn btn-success">blend</button>
+				<button id="clear-btn" class="btn btn-danger">clear</button>
 			</div>
 
 		</div>
@@ -58,40 +62,40 @@ $bodyClass = "home";
 			
 			<h2>Palette</h2>
 
-			<input type="text" id="pal0" size="19" />
+			<input type="text" id="pal0" />
 			<div class="pal" id="p0">&nbsp;</div>
 
-			<input type="text" id="pal1" size="19" />
+			<input type="text" id="pal1" />
 			<div class="pal" id="p1">&nbsp;</div>
 
-			<input type="text" id="pal2" size="19" />
+			<input type="text" id="pal2" />
 			<div class="pal" id="p2">&nbsp;</div>
 
-			<input type="text" id="pal3" size="19" />
+			<input type="text" id="pal3" />
 			<div class="pal" id="p3">&nbsp;</div>
 
-			<input type="text" id="pal4" size="19" />
+			<input type="text" id="pal4" />
 			<div class="pal" id="p4">&nbsp;</div>
 
-			<input type="text" id="pal5" size="19" />
+			<input type="text" id="pal5" />
 			<div class="pal" id="p5">&nbsp;</div>
 
-			<input type="text" id="pal6" size="19" />
+			<input type="text" id="pal6" />
 			<div class="pal" id="p6">&nbsp;</div>
 
-			<input type="text" id="pal7" size="19" />
+			<input type="text" id="pal7" />
 			<div class="pal" id="p7">&nbsp;</div>
 
-			<input type="text" id="pal8" size="19" />
+			<input type="text" id="pal8" />
 			<div class="pal" id="p8">&nbsp;</div>
 
-			<input type="text" id="pal9" size="19" />
+			<input type="text" id="pal9" />
 			<div class="pal" id="p9">&nbsp;</div>
 
-			<input type="text" id="pal10" size="19" />
+			<input type="text" id="pal10" />
 			<div class="pal" id="p10">&nbsp;</div>
 
-			<input type="text" id="pal11" size="19" />
+			<input type="text" id="pal11" />
 			<div class="pal" id="p11">&nbsp;</div>
 
 		</div>

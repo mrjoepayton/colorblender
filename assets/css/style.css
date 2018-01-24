@@ -6081,20 +6081,15 @@ h1 {
   margin-bottom: 15px;
   padding-bottom: 0; }
 
-#uicell {
-  width: 25em; }
-  #uicell th {
-    width: 6em;
-    text-align: right;
-    padding-right: 0.5em;
-    border: 1px solid black;
-    border-width: 0 1px 1px 0; }
-  #uicell td {
-    padding: 0 0 0 0.5em; }
-    #uicell td.pal {
-      padding: 0 3em; }
-  #uicell #gobuttons td {
-    height: 1.5em; }
+#uicell .color-field {
+  border: 1px solid #999;
+  height: 40px;
+  padding: 10px 15px; }
+
+#uicell .color-square {
+  border: 1px solid #999;
+  height: 40px;
+  width: 40px; }
 
 input,
 #input a {

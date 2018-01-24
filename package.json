@@ -19,7 +19,9 @@
     "grunt-modernizr": "~1.0.2",
     "grunt-notify": "~0.4.5",
     "grunt-sass": "~2.0.0",
+    "history.js": "~1.8.0",
     "jquery": "^3.3.1",
+    "js-cookie": "^2.2.0",
     "popper.js": "~1.12.5",
     "sass-flexbox": "~2.0.0",
     "webfontloader": "~1.6.28"
