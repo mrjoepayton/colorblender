@@ -6068,89 +6068,122 @@ html, body {
   height: 100%; }
 
 body {
-  background-color: #fff;
+  background-color: #D2CFCE;
   font-family: 'Open Sans', sans-serif;
   overflow: auto; }
 
 form {
   margin: 0; }
 
-h1 {
-  border-bottom: 2px solid;
-  font-family: 'Open Sans', sans-serif;
-  margin-bottom: 15px;
-  padding-bottom: 0; }
-
-#uicell .color-field {
-  border: 1px solid #999;
-  height: 40px;
-  padding: 10px 15px; }
-
-#uicell .color-square {
-  border: 1px solid #999;
-  height: 40px;
-  width: 40px; }
-
-input,
-#input a {
-  font: 0.85em "Andale Mono", Courier, monospace; }
-
-#input,
-#output {
-  margin: 0 0 1em; }
-
-#input td {
-  white-space: nowrap; }
-
-#input a {
-  border: 2px outset silver;
-  background: silver;
-  padding: 1px 0.25em;
-  cursor: pointer; }
-
-#input .coltype {
-  background: #EEE;
-  border-style: inset; }
-
-#output input {
-  border: 2px solid white;
-  border-width: 0 2px; }
-
-#output td.text {
-  border-bottom: 1px dotted silver; }
-
-#watercell {
-  width: 75px;
-  background: silver;
-  padding: 0; }
-
-#grid {
-  background: black;
-  border: 1px solid black;
-  border-width: 0 1px 1px 0;
-  margin: 5px 4px; }
-  #grid td {
-    height: 11px;
-    width: 11px;
-    padding: 0;
-    line-height: 11px; }
-    #grid td a {
+#main-header {
+  background-color: #444343;
+  margin-bottom: 30px; }
+  #main-header #main-title {
+    margin: 0;
+    padding: 15px 0; }
+    #main-header #main-title #main-logo {
       display: block;
-      height: 10px;
-      width: 10px;
-      line-height: 10px;
-      border: 1px solid black;
-      border-width: 1px 0 0 1px; }
+      height: auto;
+      width: 250px; }
 
-#textcell p {
-  margin: 0;
-  padding: 0 1em 1em 1.5em; }
+#input-block #first-color-col {
+  margin: 0 auto 0 0; }
 
-#footer {
-  color: #999;
-  font: italic 75% sans-serif; }
-  #footer p {
-    margin: 0 0 1em 0; }
-  #footer img {
-    float: right;
-    margin: 0 0 0.5em 2em; }
+#input-block #swatch-count-col {
+  background-color: #93837C;
+  margin: auto;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flexbox;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -webkit-flex-pack: center;
+  -ms-flex-pack: center;
+  -moz-justify-content: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  padding: 15px; }
+  #input-block #swatch-count-col .title {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+    color: #F5F5F5;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    font-size: 16px;
+    font-size: 1rem;
+    margin-bottom: 0;
+    margin-right: 15px;
+    font-weight: 700; }
+  #input-block #swatch-count-col #swatchCount {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    float: right; }
+
+#input-block #last-color-col {
+  margin: 0 0 0 auto; }
+
+#input-block .color-field {
+  font-family: 'Source Code Pro', monospace;
+  text-transform: uppercase; }
+
+#output-block {
+  padding-top: 30px; }
+  #output-block #swatches {
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -webkit-flex-pack: center;
+    -ms-flex-pack: center;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    justify-content: center; }
+  #output-block .color {
+    background-color: #CAC3BA;
+    position: relative; }
+    #output-block .color:before {
+      display: block;
+      content: "";
+      width: 100%;
+      padding-top: 100%; }
+    #output-block .color > .ar-content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0; }
+
+#main-footer {
+  background-color: #444343;
+  bottom: 0;
+  color: #D2CFCE;
+  margin: auto auto 0;
+  padding: 15px 0;
+  position: absolute;
+  text-align: center;
+  width: 100%; }
+  #main-footer a {
+    color: #F5F5F5; }

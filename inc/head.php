@@ -44,7 +44,7 @@
 		<script src="<?php echo($baseURL); ?>assets/js/libs/webfontloader.js<?php echo($verDate); ?>"></script>
 		<script>
 			WebFont.load({google:{
-				families: ['Open Sans', 'Open Sans Condensed', 'Merriweather']
+				families: ['Open Sans:400,700','Shrikhand','Source Code Pro:400,700','Merriweather:400,700']
 			}});
 		</script>
 	

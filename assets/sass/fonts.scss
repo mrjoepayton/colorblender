@@ -9,13 +9,21 @@
 	@mixin font($value: sans) {
 
 		@if $value == "sans" {
+
 			font-family: 'Open Sans', sans-serif;
+
 		} @else if $value == "serif" {
+			
 			font-family: 'Merriweather', serif;
-		} @else if $value == "condensed" {
-			font-family: 'Open Sans Condensed', sans-serif;
+
+		} @else if $value == "display" {
+			
+			font-family: 'Shrikhand', cursive;
+
 		} @else if $value == "mono" {
-			font-family: "Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace
+			
+			font-family: 'Source Code Pro', monospace;
+
 		} 
 
 	}

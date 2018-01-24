@@ -14,44 +14,69 @@ jQuery(document).ready(function($){
 // ------------------------- SET OBJECTS ------------------------- //
 // ------------------------- SET OBJECTS ------------------------- //
 
-	var colorGrid = $('#colors-table');
-	var colorsTable = "";
-
-	var formatBtns = $('[rel="format-btn"]');
-
 	var colorFields = $('.color-field');
-		var color1 = $('#color_1 .color-field');
-		var color1Box = $('#color_1 .color-square');
+		var colorFirst = $('#color-first');
+		var colorLast = $('#color-last');
 
-		var color2 = $('#color_2 .color-field');
-		var color2Box = $('#color_2 .color-square');
+	var swatchNum = $('#swatchCount');
 
-	var stepsSelect = $('#steps');
-
-	var blendBtn = $('#blend-btn');
-	var clearBtn = $('#clear-btn');
+	var swatchColor_1 = $('#swatch-1 .color');
+	var swatchColor_2 = $('#swatch-2 .color');
+	var swatchColor_3 = $('#swatch-3 .color');
+	var swatchColor_4 = $('#swatch-4 .color');
+	var swatchColor_5 = $('#swatch-5 .color');
+	var swatchColor_6 = $('#swatch-6 .color');
+	var swatchColor_7 = $('#swatch-7 .color');
+	var swatchColor_8 = $('#swatch-8 .color');
+	var swatchColor_9 = $('#swatch-9 .color');
+	var swatchColor_10 = $('#swatch-10 .color');
+	var swatchColor_11 = $('#swatch-11 .color');
 
 // ------------------------- FUNCTION init ------------------------- //
 // ------------------------- FUNCTION init ------------------------- //
 
-	if(!Cookies.get('colorA')){
-		Cookies.set('colorA','FFFFFF');
+	function setFirstColor(theColor){
+		Cookies.set('firstColor',theColor);
+		colorFirst.val(theColor);
+		swatchColor_1.css({'background-color':'#' + theColor});
+	}
+
+	function setLastColor(theColor){
+		Cookies.set('lastColor',theColor);
+		colorLast.val(theColor);
+		swatchColor_11.css({'background-color':'#' + theColor});
+	}
+
+	if(!Cookies.get('firstColor')){
+		Cookies.set('firstColor','FFFFFF');
 	}
 	
-	if(!Cookies.get('colorB')){
-		Cookies.set('colorB','CCCCCC');
+	if(!Cookies.get('lastColor')){
+		Cookies.set('lastColor','000000');
 	}
 
 	if(!Cookies.get('swatchCount')){
-		Cookies.set('swatchCount', '5');
+		Cookies.set('swatchCount', '1');
 	}
 
-	color1.val("#" + Cookies.get('colorA'));
-	color1Box.css({'background-color':'#' + Cookies.get('colorA')});
+	setFirstColor(Cookies.get('firstColor'));
+	setLastColor(Cookies.get('lastColor'));
 	
-	color2.val("#" + Cookies.get('colorB'));
-	color2Box.css({'background-color':'#' + Cookies.get('colorB')});
+	swatchNum.val(Cookies.get('swatchCount'));
 
-	stepsSelect.val(Cookies.get('swatchCount'));
+	colorFirst.on('blur',function(){
+		newColor = colorFirst.val();
+		setFirstColor(newColor);
+	});
+
+	colorLast.on('blur',function(){
+		newColor = colorLast.val();
+		setLastColor(newColor);
+	});
+
+	swatchNum.on('change blur', function(){
+		newCount = swatchNum.val();
+		Cookies.set('swatchCount', newCount);
+	});
 
 });
