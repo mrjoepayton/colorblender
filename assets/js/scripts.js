@@ -88,22 +88,42 @@ jQuery(document).ready(function($){
 // ------------------------- SET THE FIRST COLOR setFirstColor(theColor) ------------------------- //
 // ------------------------- SET THE FIRST COLOR setFirstColor(theColor) ------------------------- //
 
-	function setFirstColor(theColor){
-		Cookies.set('firstColor',theColor);
-		colorFirst.val(theColor);
-		swatchColor_1.css({'background-color':'#' + theColor});
-		$('#swatch-1 .color .info').css({'color': getContrastYIQ(theColor)});
+	function setFirstColor(color1){
+		Cookies.set('firstColor',color1);
+		theRGBColor = hexToRgb(color1);
+
+		colorFirst.val(color1);
+		swatchColor_1.css({'background-color':'#' + color1});
+		
+		$('#swatch-1 .color .info').removeClass().addClass( "info " + getContrastYIQ(color1) );
+		
+		$('#swatch-1 .hex .code-wrap').attr('data-clipboard-text',color1);
+		$('#swatch-1 .hex .code-wrap .code').text(color1);
+
+		$('#swatch-1 .rgb .code-wrap').attr('data-clipboard-text',theRGBColor);
+		$('#swatch-1 .rgb .code-wrap .code').text(theRGBColor);
+
 		setColors();
 	}
 
 // ------------------------- SET THE LAST COLOR setLastColor(theColor) ------------------------- //
 // ------------------------- SET THE LAST COLOR setLastColor(theColor) ------------------------- //
 
-	function setLastColor(theColor){
-		Cookies.set('lastColor',theColor);
-		colorLast.val(theColor);
-		swatchColor_11.css({'background-color':'#' + theColor});
-		$('#swatch-11 .color .info').css({'color': getContrastYIQ(theColor)});
+	function setLastColor(color2){
+		Cookies.set('lastColor',color2);
+		theRGBColor = hexToRgb(color2);
+
+		colorLast.val(color2);
+		swatchColor_11.css({'background-color':'#' + color2});
+		
+		$('#swatch-11 .color .info').removeClass().addClass( "info " +  getContrastYIQ(color2) );
+
+		$('#swatch-11 .hex .code-wrap').attr('data-clipboard-text',color2);
+		$('#swatch-11 .hex .code-wrap .code').text(color2);
+
+		$('#swatch-11 .rgb .code-wrap').attr('data-clipboard-text',theRGBColor);
+		$('#swatch-11 .rgb .code-wrap .code').text(theRGBColor);
+
 		setColors();
 	}
 
@@ -229,7 +249,7 @@ jQuery(document).ready(function($){
 			thisBlock.find('.color').css({'background-color': newHexColor});
 
 			//SET THE CONTRASTING COLOR FOR THE TEXT
-			thisBlock.find('.info').addClass( getContrastYIQ(newHexColor.substr(1)) );
+			thisBlock.find('.info').removeClass().addClass( "info " +  getContrastYIQ(newHexColor.substr(1)) );
 
 			// insert the text data into color blocks
 			thisBlock.find('.hex .hex-code').text(newHexColor);

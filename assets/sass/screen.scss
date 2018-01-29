@@ -12,178 +12,213 @@ form {
 margin: 0;
 }
 
-#main-header {
-background-color: $brand_dark;
-margin-bottom: 30px;
+// ------------------------ MAIN HEADER ------------------------ //
+// ------------------------ MAIN HEADER ------------------------ //
 
-	#main-title {
-	margin: 0;
-	padding: 15px 0;
+	#main-header {
+	background-color: $brand_dark;
 
-		#main-logo {
-		display: block;
-		height: auto;
-		margin: 0 auto;
-		width: 250px;
+		#main-title {
+		margin: 0;
+		padding: 15px 0;
+
+			#main-logo {
+			display: block;
+			height: auto;
+			margin: 0 auto;
+			width: 250px;
+			}
+
 		}
 
 	}
 
-}
-
-#input-block {
+// ------------------------ MAIN CONTENT WRAP ------------------------ //
+// ------------------------ MAIN CONTENT WRAP------------------------ //
 	
-	#first-color-col,
-	#last-color-col,
-	#swatch-count-col {
-	@include align-items(center);
+	#content-wrap {
 	@include display-flex;
-	@include justify-content(center);
-	}
+	@include flex-direction(column);
+	min-height: 100%;
 
-	#first-color-col {
-	margin: 0 auto 0 0;
-	}
-
-	#swatch-count-col {
-	background-color: $brand_brown;
-	border-radius: 4px;
-	margin: auto;
-	@include flex-direction(row);
-	padding: 15px;
-		
-		.title {
-		@include align-items(center);
-		color: $w;
+		#main-content {
 		@include display-flex;
-		@include font-size(16);
-		margin-bottom: 0;
-		margin-right: 15px;
+		padding: 30px;
+		}
+
+	}
+
+// ------------------------ MAIN FOOTER------------------------ //
+// ------------------------ MAIN FOOTER------------------------ //
+
+	#main-footer {
+	@include display-flex;
+	background-color: $brand_dark;
+	bottom: 0;
+	color: $brand_gray;
+	margin: auto auto 0;
+	padding: 15px 0;
+	text-align: center;
+	width: 100%;
+		
+		a {
+		color: $w;
 		font-weight: 700;
 		}
 
-		#swatchCount {
+	}
+
+// ------------------------ INPUT BLOCK ------------------------ //
+// ------------------------ INPUT BLOCK ------------------------ //
+
+	#input-block {
+	@include display-flex;
+	@include flex-direction(column);
+
+		#first-color-col,
+		#last-color-col,
+		#swatch-count-col {
+		@include align-items(center);
 		@include display-flex;
-		float: right;
+		@include justify-content(center);
+		}
+
+		#first-color-col {
+		margin: 0 auto auto auto;
+		}
+
+		#swatch-count-col {
+		background-color: $brand_brown;
+		border-radius: 4px;
+		margin: auto;
+		@include flex-direction(row);
+		padding: 15px;
+			
+			.title {
+			@include align-items(center);
+			color: $w;
+			@include display-flex;
+			@include font-size(16);
+			margin-bottom: 0;
+			margin-right: 15px;
+			font-weight: 700;
+			}
+
+			#swatchCount {
+			@include display-flex;
+			float: right;
+			}
+
+		}
+
+		#last-color-col {
+		margin: auto auto 0 auto;
+		}
+
+		.color-field {
+		@include font(mono);
+		text-transform: uppercase;
 		}
 
 	}
 
-	#last-color-col {
-	margin: 0 0 0 auto;
-	}
+// ------------------------ OUTPUT BLOCK ------------------------ //
+// ------------------------ OUTPUT BLOCK ------------------------ //
 
-	.color-field {
-	@include font(mono);
-	text-transform: uppercase;
-	}
+	#output-block {
 
-}
+		#swatches {
+		@include flex-direction(column);
 
-#output-block {
-padding-top: 30px;
-
-	#swatches {
-	@include flex-direction(column);
-
-		.swatch {
-
-			.color {
-			background-color: $brand_brown-lite;
-			border-radius: 4px;
-			cursor: pointer;
+			.swatch {
+			border: 1px solid transparent;
 			@include transall();
-			}
 
-			.info {
-			padding: 15px;
+				.color {
+				background-color: $brand_brown-lite;
+				border-radius: 4px;
+				cursor: pointer;
+				@include transall();
+				}
 
-				.hex,
-				.rgb {
+				.info {
 				@include align-items(center);
 				@include display-flex;
-				
-					.title {
-					@include display-flex;
-					@include font(condensed);
-					}
+				@include flex-direction(row);
+				@include justify-content(flex-end);
+				padding: 15px;
 
-					.code-wrap {
-					background-color: $w;
-					border-radius: 4px;
+					.hex,
+					.rgb {
+					@include align-items(center);
 					@include display-flex;
-					@include flex-direction(row);
-					display: inline-block;
-					padding: 3px 10px 5px;
-
-						.code {
+					margin-right: 15px;
+					
+						.title {
 						@include display-flex;
-						@include font(mono);
-						@include font-size(14);
+						@include font(condensed);
+						margin-right: 5px;
 						}
 
-						.clipboard-btn {
+						.code-wrap {
+						background-color: $w;
+						border-radius: 4px;
 						@include display-flex;
+						@include flex-direction(row);
+						padding: 5px 10px;
 
-							.clipboard-icon {
-							display: block;
-							height: 24px;
-							width: auto;
+							.code {
+							@include display-flex;
+							@include font(mono);
+							@include font-size(14);
+							}
+
+							.clipboard-btn {
+							@include align-items(center);
+							@include display-flex;
+							margin-left: 10px;
+
+								.clipboard-icon {
+								display: block;
+								height: 18px;
+								width: auto;
+								}
+
 							}
 
 						}
 
 					}
 
-				}
+					.hex {
 
-				.hex {
-				margin-bottom: 14px;
+						.code {
+						text-transform: uppercase;
+						}
 
-					.code {
-					text-transform: uppercase;
+					}
+
+					&.black {
+						.title { color: $b; }
+					}
+
+					&.white {
+						.title { color: $w; }
 					}
 
 				}
+			
+				&:hover {
 
-				&.black {
-					.title { color: $b; }
+					.color {
+					background-color: darken($brand_gray,10%);
+					@include transall();
+					}
+					
 				}
 
-				&.white {
-					.title { color: $w; }
-				}
-
-			}
-		
-			&:hover {
-
-				.color {
-				@include scale(1.01);
-				@include materialShadow(2);
-				@include transall();
-				}
-				
 			}
 
 		}
 
 	}
-
-}
-
-#main-footer {
-background-color: $brand_dark;
-bottom: 0;
-color: $brand_gray;
-margin: auto auto 0;
-padding: 15px 0;
-text-align: center;
-width: 100%;
-	
-	a {
-	color: $w;
-	font-weight: 700;
-	}
-
-}
