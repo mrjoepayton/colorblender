@@ -16,9 +16,9 @@
 			
 			font-family: 'Merriweather', serif;
 
-		} @else if $value == "display" {
+		} @else if $value == "condensed" {
 			
-			font-family: 'Shrikhand', cursive;
+			font-family: 'Barlow Condensed', sans-serif;
 
 		} @else if $value == "mono" {
 			

@@ -54,7 +54,9 @@ module.exports = function (grunt) {
 				src: [
 					'node_modules/jquery/dist/jquery.js',
 					'node_modules/js-cookie/src/js.cookie.js',
-					'node_modules/history.js/history.js'
+					'node_modules/history.js/history.js',
+					'node_modules/jquery.chameleon.js/jquery.chameleon.js',
+					'node_modules/clipboard/dist/clipboard.js'
 				],
 				dest:'assets/js/plugins.js',
 			}

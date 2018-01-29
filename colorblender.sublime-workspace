@@ -4,16 +4,32 @@
 		"selected_items":
 		[
 			[
+				"pos",
+				"pos-r\tposition: relative;"
+			],
+			[
+				"cur",
+				"cur-p\tcursor: pointer;"
+			],
+			[
+				"in",
+				"intDif"
+			],
+			[
+				"color",
+				"color2"
+			],
+			[
+				"s",
+				"swatchNum"
+			],
+			[
 				"colors",
 				"colorsTable"
 			],
 			[
 				"ta",
 				"ta-c\ttext-align: center;"
-			],
-			[
-				"pos",
-				"pos-a\tposition: absolute;"
 			],
 			[
 				"d",
@@ -388,10 +404,11 @@
 	"buffers":
 	[
 		{
-			"file": "original-code.php",
+			"file": "assets/sass/mixins.scss",
 			"settings":
 			{
-				"buffer_size": 13524,
+				"buffer_size": 8249,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
@@ -399,7 +416,7 @@
 			"file": "assets/sass/screen.scss",
 			"settings":
 			{
-				"buffer_size": 1400,
+				"buffer_size": 2625,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -408,7 +425,25 @@
 			"file": "assets/js/scripts.js",
 			"settings":
 			{
-				"buffer_size": 1876,
+				"buffer_size": 10724,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "inc/head.php",
+			"settings":
+			{
+				"buffer_size": 4309,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "index.php",
+			"settings":
+			{
+				"buffer_size": 4519,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -417,16 +452,7 @@
 			"file": "inc/header.php",
 			"settings":
 			{
-				"buffer_size": 160,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "index.php",
-			"settings":
-			{
-				"buffer_size": 3670,
-				"encoding": "UTF-8",
+				"buffer_size": 229,
 				"line_ending": "Unix"
 			}
 		}
@@ -582,22 +608,27 @@
 	[
 		"/Users/joepayton/Projects/GIT Repos/colorblender",
 		"/Users/joepayton/Projects/GIT Repos/colorblender/assets",
-		"/Users/joepayton/Projects/GIT Repos/colorblender/assets/js",
+		"/Users/joepayton/Projects/GIT Repos/colorblender/assets/img",
 		"/Users/joepayton/Projects/GIT Repos/colorblender/assets/sass",
 		"/Users/joepayton/Projects/GIT Repos/colorblender/inc"
 	],
 	"file_history":
 	[
-		"/Users/joepayton/Projects/GIT Repos/colorblender/inc/header.php",
-		"/Users/joepayton/Projects/GIT Repos/colorblender/gruntfile.js",
+		"/Users/joepayton/Projects/GIT Repos/colorblender/assets/img/clipboard.svg",
 		"/Users/joepayton/Projects/GIT Repos/colorblender/package.json",
+		"/Users/joepayton/Projects/GIT Repos/colorblender/gruntfile.js",
+		"/Users/joepayton/Projects/GIT Repos/colorblender/assets/sass/fonts.scss",
+		"/Users/joepayton/Projects/GIT Repos/colorblender/inc/head.php",
+		"/Users/joepayton/Projects/GIT Repos/colorblender/inc/footer.php",
+		"/Users/joepayton/Projects/GIT Repos/colorblender/inc/header.php",
+		"/Users/joepayton/Projects/GIT Repos/colorblender/assets/sass/branding.scss",
+		"/Users/joepayton/Projects/GIT Repos/colorblender/assets/img/logo.svg",
+		"/Users/joepayton/Projects/GIT Repos/colorblender/node_modules/chameleon.js/chameleon.js",
+		"/Users/joepayton/Projects/GIT Repos/colorblender/assets/sass/mixins.scss",
+		"/Users/joepayton/Projects/GIT Repos/colorblender/index.php",
+		"/Users/joepayton/Projects/GIT Repos/colorblender/original-code.php",
 		"/Users/joepayton/Projects/GIT Repos/colorblender/assets/js/plugins.js",
 		"/Users/joepayton/Projects/GIT Repos/colorblender/.gitignore",
-		"/Users/joepayton/Projects/GIT Repos/colorblender/inc/footer.php",
-		"/Users/joepayton/Projects/GIT Repos/colorblender/original-code.php",
-		"/Users/joepayton/Projects/GIT Repos/colorblender/assets/sass/branding.scss",
-		"/Users/joepayton/Projects/GIT Repos/colorblender/inc/head.php",
-		"/Users/joepayton/Projects/GIT Repos/colorblender/assets/sass/mixins.scss",
 		"/Users/joepayton/Projects/GIT Repos/spacecity.us/assets/sass/branding.scss",
 		"/Users/joepayton/Projects/GIT Repos/spacecity.us/inc/main-nav.php",
 		"/Users/joepayton/Projects/GIT Repos/spacecity.us/inc/head.php",
@@ -710,22 +741,18 @@
 		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/index-OLD-USE-IT-FOR-SCRAP.php",
 		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/img/blended-learning/circles.svg",
 		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/less/reflex/mixins.less",
-		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/inc/head.php",
-		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/inc/global.php",
-		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/js/polyfills/pointer_events_polyfill.js",
-		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/js/plugins/debounce.js",
-		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/blog/post.php",
-		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/work/work-sample.php"
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/inc/head.php"
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 39.0
 	},
 	"find_in_files":
 	{
 		"height": 101.0,
 		"where_history":
 		[
+			"<current file>"
 		]
 	},
 	"find_state":
@@ -733,6 +760,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"scale",
+			"last-color-col",
+			"Cookies.get('firstColor'), Cookies.get('lastColor')",
 			"temp",
 			"id=\"c",
 			"hash",
@@ -774,36 +804,36 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "original-code.php",
+					"file": "assets/sass/mixins.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 13524,
+						"buffer_size": 8249,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4917,
-								4917
+								2035,
+								2053
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.sublime-syntax",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1990.0,
+						"translation.y": 756.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
@@ -812,26 +842,27 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1400,
+						"buffer_size": 2625,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								266,
-								266
+								1989,
+								1989
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.sublime-syntax"
+							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 91.0,
+						"translation.y": 1515.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -840,51 +871,53 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1876,
+						"buffer_size": 10724,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1735,
-								1735
+								6715,
+								6715
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 61.0,
+						"translation.y": 2325.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "inc/header.php",
+					"file": "inc/head.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 160,
+						"buffer_size": 4309,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								122,
-								122
+								1997,
+								1997
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 205.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
@@ -896,15 +929,44 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3670,
+						"buffer_size": 4519,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								991,
-								991
+								3185,
+								3185
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1479.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "inc/header.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 229,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								120,
+								186
 							]
 						],
 						"settings":
@@ -912,10 +974,10 @@
 							"syntax": "Packages/PHP/PHP.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 91.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 5,
 					"type": "text"
 				}
 			]

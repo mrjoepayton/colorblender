@@ -23,6 +23,7 @@ margin-bottom: 30px;
 		#main-logo {
 		display: block;
 		height: auto;
+		margin: 0 auto;
 		width: 250px;
 		}
 
@@ -32,17 +33,23 @@ margin-bottom: 30px;
 
 #input-block {
 	
+	#first-color-col,
+	#last-color-col,
+	#swatch-count-col {
+	@include align-items(center);
+	@include display-flex;
+	@include justify-content(center);
+	}
+
 	#first-color-col {
 	margin: 0 auto 0 0;
 	}
 
 	#swatch-count-col {
 	background-color: $brand_brown;
+	border-radius: 4px;
 	margin: auto;
-	@include align-items(center);
-	@include display-flex;
 	@include flex-direction(row);
-	@include justify-content(center);
 	padding: 15px;
 		
 		.title {
@@ -77,12 +84,90 @@ margin-bottom: 30px;
 padding-top: 30px;
 
 	#swatches {
-	@include justify-content(center);
-	}
+	@include flex-direction(column);
 
-	.color {
-	background-color: $brand_brown-lite;
-	@include aspect-ratio(1,1);
+		.swatch {
+
+			.color {
+			background-color: $brand_brown-lite;
+			border-radius: 4px;
+			cursor: pointer;
+			@include transall();
+			}
+
+			.info {
+			padding: 15px;
+
+				.hex,
+				.rgb {
+				@include align-items(center);
+				@include display-flex;
+				
+					.title {
+					@include display-flex;
+					@include font(condensed);
+					}
+
+					.code-wrap {
+					background-color: $w;
+					border-radius: 4px;
+					@include display-flex;
+					@include flex-direction(row);
+					display: inline-block;
+					padding: 3px 10px 5px;
+
+						.code {
+						@include display-flex;
+						@include font(mono);
+						@include font-size(14);
+						}
+
+						.clipboard-btn {
+						@include display-flex;
+
+							.clipboard-icon {
+							display: block;
+							height: 24px;
+							width: auto;
+							}
+
+						}
+
+					}
+
+				}
+
+				.hex {
+				margin-bottom: 14px;
+
+					.code {
+					text-transform: uppercase;
+					}
+
+				}
+
+				&.black {
+					.title { color: $b; }
+				}
+
+				&.white {
+					.title { color: $w; }
+				}
+
+			}
+		
+			&:hover {
+
+				.color {
+				@include scale(1.01);
+				@include materialShadow(2);
+				@include transall();
+				}
+				
+			}
+
+		}
+
 	}
 
 }
@@ -93,12 +178,12 @@ bottom: 0;
 color: $brand_gray;
 margin: auto auto 0;
 padding: 15px 0;
-position: absolute;
 text-align: center;
 width: 100%;
 	
 	a {
 	color: $w;
+	font-weight: 700;
 	}
 
 }

@@ -226,6 +226,16 @@
 
 	}
 
+/* -------------------- TRANSFORM SCALE -------------------- */
+/* -------------------- TRANSFORM SCALE -------------------- */
+
+	@mixin scale($value: 1){
+		-moz-transform: scale($value);
+		-webkit-transform: scale($value);
+		-o-transform: scale($value);
+		-ms-transform: scale($value);
+		transform: scale($value);
+	}
 
 /* ------------------------------------------ Vertical Center ------------------------------------------ */
 /* ------------------------------------------ Vertical Center ------------------------------------------ */
