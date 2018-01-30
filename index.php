@@ -24,7 +24,7 @@ $bodyClass = "home";
 		
 		<div class="row">
 
-			<div id="input-block" class="col-4">
+			<div id="input-block" class="col-12 col-sm-4">
 
 					<div id="first-color-col">
 						
@@ -32,7 +32,7 @@ $bodyClass = "home";
 							<div class="input-group-prepend">
 								<div class="input-group-text">#</div>
 							</div>
-							<input type="text" class="color-field form-control" id="color-first" placeholder="FFFFFF">
+							<input type="text" maxlength="7" class="color-field form-control" id="color-first" placeholder="FFFFFF">
 						</div>
 
 					</div>
@@ -55,14 +55,14 @@ $bodyClass = "home";
 							<div class="input-group-prepend">
 								<div class="input-group-text">#</div>
 							</div>
-							<input type="text" class="color-field form-control" id="color-last" placeholder="000000">
+							<input type="text" maxlength="7" class="color-field form-control" id="color-last" placeholder="000000">
 						</div>
 
 					</div>
 
 			</div> <!-- close "input-block" -->
 
-			<div id="output-block" class="col-8">
+			<div id="output-block" class="col-12 col-sm-8">
 				
 				<div id="swatches">
 

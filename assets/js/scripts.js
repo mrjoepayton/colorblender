@@ -3,6 +3,10 @@ jQuery(document).ready(function($){
 // ------------------------- SET OBJECTS ------------------------- //
 // ------------------------- SET OBJECTS ------------------------- //
 
+	var notificationBar = $('#notifications');
+		var notificationValue = $('#notifications .val');
+		var hideBar;
+
 	var colorFields = $('.color-field');
 		var colorFirst = $('#color-first');
 		var colorLast = $('#color-last');
@@ -59,11 +63,21 @@ jQuery(document).ready(function($){
 	var rgbClipboard = new Clipboard('.rgb .code-wrap');
 
 	hexClipboard.on('success', function(e) {
-	    console.info('Text:', e.text);
+		if(hideBar){ window.clearTimeout(hideBar); }
+
+		notificationValue.text(e.text);
+		notificationBar.addClass("is-showing");
+		
+		hideBar = window.setTimeout(function(){ notificationBar.removeClass("is-showing"); },3000);
 	});
 
 	rgbClipboard.on('success', function(e) {
-	    console.info('Text:', e.text);
+	    if(hideBar){ window.clearTimeout(hideBar); }
+
+		notificationValue.text(e.text);
+		notificationBar.addClass("is-showing");
+		
+		hideBar = window.setTimeout(function(){ notificationBar.removeClass("is-showing"); },3000);
 	});
 
 // ------------------------- FUNCTION TO CONVERT HEX TO RGB hexToRgb(hex) ------------------------- //
@@ -97,8 +111,8 @@ jQuery(document).ready(function($){
 		
 		$('#swatch-1 .color .info').removeClass().addClass( "info " + getContrastYIQ(color1) );
 		
-		$('#swatch-1 .hex .code-wrap').attr('data-clipboard-text',color1);
-		$('#swatch-1 .hex .code-wrap .code').text(color1);
+		$('#swatch-1 .hex .code-wrap').attr('data-clipboard-text','#' + color1);
+		$('#swatch-1 .hex .code-wrap .code').text('#' + color1);
 
 		$('#swatch-1 .rgb .code-wrap').attr('data-clipboard-text',theRGBColor);
 		$('#swatch-1 .rgb .code-wrap .code').text(theRGBColor);
@@ -115,11 +129,11 @@ jQuery(document).ready(function($){
 
 		colorLast.val(color2);
 		swatchColor_11.css({'background-color':'#' + color2});
-		
+
 		$('#swatch-11 .color .info').removeClass().addClass( "info " +  getContrastYIQ(color2) );
 
-		$('#swatch-11 .hex .code-wrap').attr('data-clipboard-text',color2);
-		$('#swatch-11 .hex .code-wrap .code').text(color2);
+		$('#swatch-11 .hex .code-wrap').attr('data-clipboard-text','#' + color2);
+		$('#swatch-11 .hex .code-wrap .code').text('#' + color2);
 
 		$('#swatch-11 .rgb .code-wrap').attr('data-clipboard-text',theRGBColor);
 		$('#swatch-11 .rgb .code-wrap .code').text(theRGBColor);
@@ -340,6 +354,8 @@ jQuery(document).ready(function($){
 
 	colorFirst.on('blur',function(){
 		newColor = colorFirst.val();
+		newColor = newColor.replace(/[^\w\s]/gi, '');
+		colorFirst.val(newColor);
 		setFirstColor(newColor);
 	});
 
@@ -348,6 +364,8 @@ jQuery(document).ready(function($){
 
 	colorLast.on('blur',function(){
 		newColor = colorLast.val();
+		newColor = newColor.replace(/[^\w\s]/gi, '');
+		colorLast.val(newColor);
 		setLastColor(newColor);
 	});
 

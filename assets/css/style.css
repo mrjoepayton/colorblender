@@ -6088,6 +6088,32 @@ form {
       margin: 0 auto;
       width: 250px; }
 
+#notifications {
+  background-color: #CAC3BA;
+  color: #93837C;
+  font-family: 'Barlow Condensed', sans-serif;
+  left: 0;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  padding: 10px;
+  position: fixed;
+  text-align: center;
+  top: -100px;
+  width: 100%;
+  z-index: 100;
+  -webkit-transition: all 250ms ease-in-out;
+  -moz-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out; }
+  #notifications .val {
+    color: #444343;
+    font-weight: 700; }
+  #notifications.is-showing {
+    top: 0px;
+    -webkit-transition: all 250ms ease-in-out;
+    -moz-transition: all 250ms ease-in-out;
+    -o-transition: all 250ms ease-in-out;
+    transition: all 250ms ease-in-out; }
+
 #content-wrap {
   display: -webkit-box;
   display: -moz-box;
@@ -6123,11 +6149,43 @@ form {
   color: #D2CFCE;
   margin: auto auto 0;
   padding: 15px 0;
-  text-align: center;
+  text-align: right;
   width: 100%; }
   #main-footer a {
     color: #F5F5F5;
-    font-weight: 700; }
+    font-weight: 700;
+    text-decoration: none;
+    -webkit-transition: all 250ms ease-in-out;
+    -moz-transition: all 250ms ease-in-out;
+    -o-transition: all 250ms ease-in-out;
+    transition: all 250ms ease-in-out; }
+    #main-footer a:hover {
+      color: #74b8de;
+      -webkit-transition: all 250ms ease-in-out;
+      -moz-transition: all 250ms ease-in-out;
+      -o-transition: all 250ms ease-in-out;
+      transition: all 250ms ease-in-out; }
+  #main-footer #created,
+  #main-footer #inspired {
+    font-size: 14px;
+    font-size: 0.875rem; }
+    @media all and (max-width: 575px) {
+      #main-footer #created,
+      #main-footer #inspired {
+        font-size: 12px;
+        font-size: 0.75rem;
+        text-align: center; } }
+  #main-footer #foot-logo-wrap #foot-logo {
+    height: 100%;
+    width: auto; }
+  @media all and (max-width: 575px) {
+    #main-footer #foot-logo-wrap a {
+      display: block;
+      width: 70px;
+      margin: 15px auto; }
+      #main-footer #foot-logo-wrap a #foot-logo {
+        height: auto;
+        width: 100%; } }
 
 #input-block {
   display: -webkit-box;
@@ -6163,6 +6221,11 @@ form {
     -moz-justify-content: center;
     -webkit-justify-content: center;
     justify-content: center; }
+    @media all and (max-width: 767px) {
+      #input-block #first-color-col,
+      #input-block #last-color-col,
+      #input-block #swatch-count-col {
+        margin: auto; } }
   #input-block #first-color-col {
     margin: 0 auto auto auto; }
   #input-block #swatch-count-col {
@@ -6194,6 +6257,18 @@ form {
       margin-bottom: 0;
       margin-right: 15px;
       font-weight: 700; }
+      @media all and (max-width: 767px) {
+        #input-block #swatch-count-col .title {
+          -webkit-box-pack: center;
+          -moz-box-pack: center;
+          -webkit-flex-pack: center;
+          -ms-flex-pack: center;
+          -moz-justify-content: center;
+          -webkit-justify-content: center;
+          justify-content: center;
+          margin-bottom: 15px;
+          margin-right: 0;
+          text-align: center; } }
     #input-block #swatch-count-col #swatchCount {
       display: -webkit-box;
       display: -moz-box;
@@ -6202,11 +6277,25 @@ form {
       display: -webkit-flex;
       display: flex;
       float: right; }
+    @media all and (max-width: 767px) {
+      #input-block #swatch-count-col {
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin: auto; } }
   #input-block #last-color-col {
     margin: auto auto 0 auto; }
   #input-block .color-field {
     font-family: 'Source Code Pro', monospace;
     text-transform: uppercase; }
+  @media all and (max-width: 767px) {
+    #input-block #first-color-col,
+    #input-block #last-color-col,
+    #input-block #swatch-count-col {
+      margin: 0 auto 15px; } }
 
 #output-block #swatches {
   -webkit-box-orient: vertical;
@@ -6320,18 +6409,56 @@ form {
             display: -ms-flexbox;
             display: -webkit-flex;
             display: flex;
-            margin-left: 10px; }
+            margin: auto 0 auto auto; }
             #output-block #swatches .swatch .info .hex .code-wrap .clipboard-btn .clipboard-icon,
             #output-block #swatches .swatch .info .rgb .code-wrap .clipboard-btn .clipboard-icon {
               display: block;
               height: 18px;
               width: auto; }
-      #output-block #swatches .swatch .info .hex .code {
-        text-transform: uppercase; }
+        @media all and (max-width: 767px) {
+          #output-block #swatches .swatch .info .hex,
+          #output-block #swatches .swatch .info .rgb {
+            -webkit-box-pack: end;
+            -moz-box-pack: end;
+            -webkit-flex-pack: end;
+            -ms-flex-pack: end;
+            -moz-justify-content: flex-end;
+            -webkit-justify-content: flex-end;
+            justify-content: flex-end;
+            margin-right: 0; }
+            #output-block #swatches .swatch .info .hex:first-child,
+            #output-block #swatches .swatch .info .rgb:first-child {
+              margin-bottom: 15px; } }
+      #output-block #swatches .swatch .info .hex .code-wrap {
+        min-width: 105px; }
+        #output-block #swatches .swatch .info .hex .code-wrap .code {
+          text-transform: uppercase; }
+      #output-block #swatches .swatch .info .rgb .code-wrap {
+        min-width: 180px; }
       #output-block #swatches .swatch .info.black .title {
         color: #000; }
       #output-block #swatches .swatch .info.white .title {
         color: #F5F5F5; }
+      @media all and (max-width: 767px) {
+        #output-block #swatches .swatch .info {
+          -webkit-box-align: end;
+          -ms-flex-align: end;
+          -webkit-align-items: flex-end;
+          -moz-align-items: flex-end;
+          align-items: flex-end;
+          -webkit-box-orient: vertical;
+          -moz-box-orient: vertical;
+          -webkit-flex-direction: column;
+          -moz-flex-direction: column;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          -webkit-box-pack: end;
+          -moz-box-pack: end;
+          -webkit-flex-pack: end;
+          -ms-flex-pack: end;
+          -moz-justify-content: flex-end;
+          -webkit-justify-content: flex-end;
+          justify-content: flex-end; } }
     #output-block #swatches .swatch:hover .color {
       background-color: #bab5b3;
       -webkit-transition: all 250ms ease-in-out;

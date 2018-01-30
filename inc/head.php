@@ -12,18 +12,18 @@
 	<!-- /////////// FAVICONS //////////// -->
 	<!-- /////////// FAVICONS //////////// -->
 
-		<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
-		<link rel="manifest" href="/assets/favicons/manifest.json">
-		<link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#000000">
-		<link rel="shortcut icon" href="/assets/favicons/favicon.ico">
-		<meta name="apple-mobile-web-app-title" content="pageTitle">
-		<meta name="application-name" content="pageTitle">
-		<meta name="msapplication-TileColor" content="#ffffff">
-		<meta name="msapplication-TileImage" content="/assets/favicons/mstile-144x144.png">
-		<meta name="msapplication-config" content="/assets/favicons/browserconfig.xml">
-		<meta name="theme-color" content="#ffffff">
+		<link rel="apple-touch-icon" sizes="180x180" href="<?php echo($baseURL); ?>/assets/favicons/apple-touch-icon.png<?php echo($verDate); ?>">
+		<link rel="icon" type="image/png" sizes="32x32" href="<?php echo($baseURL); ?>/assets/favicons/favicon-32x32.png<?php echo($verDate); ?>">
+		<link rel="icon" type="image/png" sizes="16x16" href="<?php echo($baseURL); ?>/assets/favicons/favicon-16x16.png<?php echo($verDate); ?>">
+		<link rel="manifest" href="<?php echo($baseURL); ?>/assets/favicons/manifest.json<?php echo($verDate); ?>">
+		<link rel="mask-icon" href="<?php echo($baseURL); ?>/assets/favicons/safari-pinned-tab.svg<?php echo($verDate); ?>" color="#92837c">
+		<link rel="shortcut icon" href="<?php echo($baseURL); ?>/assets/favicons/favicon.ico<?php echo($verDate); ?>">
+		<meta name="apple-mobile-web-app-title" content="Color Blender by Space City Vanity">
+		<meta name="application-name" content="Color Blender by Space City Vanity">
+		<meta name="msapplication-TileColor" content="#d2cfce">
+		<meta name="msapplication-TileImage" content="<?php echo($baseURL); ?>/assets/favicons/mstile-144x144.png<?php echo($verDate); ?>">
+		<meta name="msapplication-config" content="<?php echo($baseURL); ?>/assets/favicons/browserconfig.xml<?php echo($verDate); ?>">
+		<meta name="theme-color" content="#d2cfce">
 	
 	<!-- /////////// PINGBACKS AND BASE URL //////////// -->
 	<!-- /////////// PINGBACKS AND BASE URL //////////// -->

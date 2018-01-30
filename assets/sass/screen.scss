@@ -33,6 +33,35 @@ margin: 0;
 
 	}
 
+// ------------------------ NOTIFICATIONS BAR ------------------------ //
+// ------------------------ NOTIFICATIONS BAR ------------------------ //
+	
+	#notifications {
+	background-color: $brand_brown-lite;
+	color: $brand_brown;
+	@include font(condensed);
+	left: 0;
+	@include materialShadow(2);
+	padding: 10px;
+	position: fixed;
+	text-align: center;
+	top: -100px;
+	width: 100%;
+	z-index: 100;
+	@include transall();
+
+		.val {
+		color: $brand_dark;
+		font-weight: 700;
+		}
+		
+		&.is-showing {
+		top: 0px;
+		@include transall();
+		}
+
+	}
+
 // ------------------------ MAIN CONTENT WRAP ------------------------ //
 // ------------------------ MAIN CONTENT WRAP------------------------ //
 	
@@ -58,12 +87,56 @@ margin: 0;
 	color: $brand_gray;
 	margin: auto auto 0;
 	padding: 15px 0;
-	text-align: center;
+	text-align: right;
 	width: 100%;
 		
 		a {
 		color: $w;
 		font-weight: 700;
+		text-decoration: none;
+		@include transall();
+			
+			&:hover {
+			color: #74b8de;
+			@include transall();
+			}
+
+		}
+
+		#created,
+		#inspired {
+		@include font-size(14);
+
+			@media all and (max-width: 575px) {
+			@include font-size(12);
+			text-align: center;
+			}
+
+		}
+
+		#foot-logo-wrap {
+			
+			#foot-logo {
+			height: 100%;
+			width: auto;
+			}
+			
+			@media all and (max-width: 575px) {
+				
+				a {
+				display:block;
+				width: 70px;
+				margin: 15px auto;
+
+					#foot-logo {
+					height: auto;
+					width: 100%;
+					}
+
+				}
+
+			}
+
 		}
 
 	}
@@ -81,6 +154,11 @@ margin: 0;
 		@include align-items(center);
 		@include display-flex;
 		@include justify-content(center);
+
+			@media all and (max-width: 767px) {
+			margin: auto;
+			}
+
 		}
 
 		#first-color-col {
@@ -102,11 +180,24 @@ margin: 0;
 			margin-bottom: 0;
 			margin-right: 15px;
 			font-weight: 700;
+
+				@media all and (max-width: 767px) {
+				@include justify-content(center);
+				margin-bottom: 15px;
+				margin-right: 0;
+				text-align: center;
+				}
+
 			}
 
 			#swatchCount {
 			@include display-flex;
 			float: right;
+			}
+
+			@media all and (max-width: 767px) {
+			@include flex-direction(column);
+			margin: auto;
 			}
 
 		}
@@ -118,6 +209,16 @@ margin: 0;
 		.color-field {
 		@include font(mono);
 		text-transform: uppercase;
+		}
+
+		@media all and (max-width: 767px) {
+
+			#first-color-col,
+			#last-color-col,
+			#swatch-count-col {
+			margin: 0 auto 15px;
+			}
+
 		}
 
 	}
@@ -176,7 +277,7 @@ margin: 0;
 							.clipboard-btn {
 							@include align-items(center);
 							@include display-flex;
-							margin-left: 10px;
+							margin: auto 0 auto auto;
 
 								.clipboard-icon {
 								display: block;
@@ -188,12 +289,35 @@ margin: 0;
 
 						}
 
+						@media all and (max-width: 767px) {
+						@include justify-content(flex-end);
+						margin-right: 0;
+
+							&:first-child {
+							margin-bottom: 15px;
+							}
+
+						}
+
 					}
 
 					.hex {
+						
+						.code-wrap {
+						min-width: 105px;
 
-						.code {
-						text-transform: uppercase;
+							.code {
+							text-transform: uppercase;
+							}
+
+						}
+
+					}
+
+					.rgb {
+
+						.code-wrap {
+						min-width: 180px;
 						}
 
 					}
@@ -204,6 +328,12 @@ margin: 0;
 
 					&.white {
 						.title { color: $w; }
+					}
+
+					@media all and (max-width: 767px) {
+					@include align-items(flex-end);
+					@include flex-direction(column);
+					@include justify-content(flex-end);
 					}
 
 				}

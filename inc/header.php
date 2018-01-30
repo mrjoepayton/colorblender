@@ -1,5 +1,6 @@
 <header id="main-header">
 	<div class="container">
+
 		<div class="row">
 			
 			<div class="col">
@@ -7,5 +8,11 @@
 			</div>
 
 		</div>
+
 	</div>
 </header>
+
+
+<div id="notifications">
+	<div class="copied-note"><span class="val"></span> was copied to your clipboard</div>
+</div>

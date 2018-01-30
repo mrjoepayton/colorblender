@@ -1,10 +1,23 @@
 	<footer id="main-footer">
 				
 		<div class="container">
+			
 			<div class="row">
 				
-				<div class="col">
-					This color blender tool was inspired by <a href="https://meyerweb.com/eric/tools/color-blend/" target="_blank" rel="noopener">Eric Meyer&rsquo;s Color Blender tool</a>. Thanks for the inspiration.
+				<div class="col-12 col-sm-11">
+					
+					<div id="created">
+					This color blender tool was created by <a href="https://spacecityvanity.com/">Space City Vanity</a> &copy; <?php echo( date('Y') );?>
+					</div>
+					
+					<div id="inspired">
+						 Inspired by <a href="https://meyerweb.com/eric/tools/color-blend/" target="_blank" rel="noopener">Eric Meyer&rsquo;s Color Blender tool</a>. Thank you!
+					</div>
+
+				</div>
+
+				<div id="foot-logo-wrap" class="col-12 col-sm-1">
+					<a href="https://spacecityvanity.com/"><?php echo(file_get_contents($baseDIR.'/assets/img/foot-logo.svg')); ?></a>
 				</div>
 				
 			</div>
