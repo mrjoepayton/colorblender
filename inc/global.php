@@ -1,28 +1,22 @@
 <?php
 
 //SHOW ALL PHP ERRORS
-error_reporting(E_ALL & ~E_NOTICE);
+if(strpos($_SERVER['HTTP_HOST'],'8888') !== false){
+	error_reporting(E_ALL & ~E_NOTICE);
+}
 
 // -------------------------- SET GLOBAL VARS -------------------------------//
 // -------------------------- SET GLOBAL VARS -------------------------------//
 
-$baseURL = "http://".$_SERVER['HTTP_HOST']."/";
-$baseDIR = $_SERVER['DOCUMENT_ROOT'];
-$verDate = "?ver=120116";
-
-// -------------------------- CONNECT TO REMOTE DATABASE -------------------------------//
-// -------------------------- CONNECT TO REMOTE DATABASE -------------------------------//
-
-//require($_SERVER['DOCUMENT_ROOT'].'/inc/medoo.php');
-
-//$database = new medoo([
-//    'database_type' => 'mysql',
-//    'database_name' => 'db50330_wp',
-//    'server' => 'external-db.s50330.gridserver.com',
-//    'username' => 'db50330_wp',
-//    'password' => 'y,Sj0C[a0y',
-//    'charset' => 'utf8'
-//]);
+if(strpos($_SERVER['HTTP_HOST'],'8888') !== false){
+	$baseURL = "http://".$_SERVER['HTTP_HOST']."/";
+	$baseDIR = $_SERVER['DOCUMENT_ROOT'];
+	$verDate = "?ver=013017";
+} else {
+	$baseURL = "https://".$_SERVER['HTTP_HOST']."/colorblender/";
+	$baseDIR = $_SERVER['DOCUMENT_ROOT']."/colorblender";
+	$verDate = "?ver=013017";
+}
 
 // -------------------------- GET THE CLIENT'S IP ADDRESS -------------------------------//
 // -------------------------- GET THE CLIENT'S IP ADDRESS -------------------------------//

@@ -1,10 +1,15 @@
 <?php
-	
-include($_SERVER['DOCUMENT_ROOT'].'/inc/global.php');
+
+if(strpos($_SERVER['HTTP_HOST'],'8888') !== false){
+	include($_SERVER['DOCUMENT_ROOT'].'/inc/global.php');
+} else {
+	include($_SERVER['DOCUMENT_ROOT'].'/colorblender/inc/global.php');
+}
+
 
 $pageTitle = "Color Blender";
-$pageDescription = "Color Blender rebuild of Eric Meyer's color blend tool [ https://meyerweb.com/eric/tools/color-blend/ ]";
-$currentURL = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+$pageDescription = "Color Blender inspired by Eric Meyer's color blend tool [ https://meyerweb.com/eric/tools/color-blend/ ]";
+$currentURL = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
 $pageImage = "https://spacecity.us/assets/img/spacecity.jpg";
 
 $bodyID = "homepage";
@@ -12,11 +17,11 @@ $bodyClass = "home";
 
 ?>
 
-<?php include($_SERVER['DOCUMENT_ROOT'].'/inc/head.php'); ?>
+<?php include($baseDIR.'/inc/head.php'); ?>
 
 <div id="content-wrap">
 
-	<?php include($_SERVER['DOCUMENT_ROOT'].'/inc/header.php'); ?>
+	<?php include($baseDIR.'/inc/header.php'); ?>
 
 	<div id="main-content">
 
@@ -352,6 +357,25 @@ $bodyClass = "home";
 
 	</div> <!-- close "main-content" -->
 
-	<?php include($_SERVER['DOCUMENT_ROOT'].'/inc/footer.php'); ?>
+	<div class="container adsbygoogle">
+		<div class="row justify-content-center">
+
+			<div class="col-8">
+				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+				<!-- Color Blender Tool -->
+				<ins class="adsbygoogle"
+				     style="display:block"
+				     data-ad-client="ca-pub-5107262588366297"
+				     data-ad-slot="3539935168"
+				     data-ad-format="auto"></ins>
+				<script>
+				(adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
+			</div>
+
+		</div>
+	</div>
+
+	<?php include($baseDIR.'/inc/footer.php'); ?>
 
 </div> <!-- close "content-wrap" -->

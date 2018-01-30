@@ -51,7 +51,7 @@
 	<!-- /////////// CSS FILE //////////// -->
 	<!-- /////////// CSS FILE //////////// -->
 		
-		<?php if(strpos($_SERVER[HTTP_HOST],'8888') !== false){ ?>
+		<?php if(strpos($_SERVER['HTTP_HOST'],'8888') !== false){ ?>
 			<link href="<?php echo($baseURL); ?>assets/css/style.css" rel="stylesheet">
 		<?php } else { ?>
 			<link href="<?php echo($baseURL); ?>assets/css/style.min.css<?php echo($verDate); ?>" rel="stylesheet">

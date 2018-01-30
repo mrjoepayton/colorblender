@@ -25,15 +25,25 @@
 		
 	</footer>
 		
-		<?php if(strpos($_SERVER[HTTP_HOST],'8888') !== false){ ?>
+		<?php if(strpos($_SERVER['HTTP_HOST'],'8888') !== false){ ?>
 
-			<script type='text/javascript' src="/assets/js/plugins.js"></script>
-			<script type='text/javascript' src="/assets/js/scripts.js"></script>
+			<script type='text/javascript' src="<?php echo($baseURL); ?>assets/js/plugins.js"></script>
+			<script type='text/javascript' src="<?php echo($baseURL); ?>assets/js/scripts.js"></script>
 
 		<?php } else { ?>
 			
-			<script type='text/javascript' src="/assets/js/plugins.min.js"></script>
-			<script type='text/javascript' src="/assets/js/scripts.min.js"></script>
+			<script type='text/javascript' src="<?php echo($baseURL); ?>assets/js/plugins.min.js"></script>
+			<script type='text/javascript' src="<?php echo($baseURL); ?>assets/js/scripts.min.js"></script>
+
+			<!-- Global site tag (gtag.js) - Google Analytics -->
+			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113310791-2"></script>
+			<script>
+				window.dataLayer = window.dataLayer || [];
+				function gtag(){dataLayer.push(arguments);}
+				gtag('js', new Date());
+
+				gtag('config', 'UA-113310791-2');
+			</script>
 
 		<?php } ?>
 
