@@ -1,0 +1,3 @@
+User-Agent: *
+Sitemap: https://tools.spacecityvanity.com/colorblender/sitemap.xml
+Disallow: /google1bb42ce0d808dc00.html

@@ -1,0 +1,63 @@
+// ------------------------ BASE FONT SIZE ------------------------ //
+// ------------------------ BASE FONT SIZE ------------------------ //
+
+	$base-size: 16;
+
+// ------------------------ BASE WEB FONTS ------------------------ //
+// ------------------------ BASE WEB FONTS ------------------------ //
+
+	@mixin font($value: sans) {
+
+		@if $value == "sans" {
+
+			font-family: 'Open Sans', sans-serif;
+
+		} @else if $value == "serif" {
+			
+			font-family: 'Merriweather', serif;
+
+		} @else if $value == "condensed" {
+			
+			font-family: 'Barlow Condensed', sans-serif;
+
+		} @else if $value == "mono" {
+			
+			font-family: 'Source Code Pro', monospace;
+
+		} 
+
+	}
+
+/* -------------------- FONT SIZE -------------------- */
+/* -------------------- FONT SIZE -------------------- */
+
+	@mixin font-size($sizeValue) {
+		$remValue: ($sizeValue/$base-size);
+		$pxValue: $sizeValue;
+		font-size: $pxValue + px; 
+		font-size: $remValue + rem;
+	}
+
+/* -------------------- LINE HEIGHTS -------------------- */
+/* -------------------- LINE HEIGHTS -------------------- */
+
+	@mixin line-height($sizeValue) {
+		$remValue: ($sizeValue/$base-size);
+		$pxValue: $sizeValue;
+		line-height: $pxValue + px; 
+		line-height: $remValue + rem;
+	}
+
+/* -------------------- STOKE TEXT -------------------- */
+/* -------------------- STOKE TEXT -------------------- */
+
+	@mixin stroke($width, $color) {
+		$shadow: ();
+		@for $i from -$width through $width {
+			$shadow: append($shadow,#{$width}px #{$i}px $color, comma);
+			$shadow: append($shadow,#{-$width}px #{$i}px $color, comma);
+			$shadow: append($shadow,#{$i}px #{$width}px $color, comma);
+			$shadow: append($shadow,#{$i}px #{-$width}px $color, comma);
+		}
+		text-shadow: $shadow;
+	}

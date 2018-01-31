@@ -1,0 +1,303 @@
+/* -------------------- PLACEHOLDER TEXT STYLING -------------------- */
+/* -------------------- PLACEHOLDER TEXT STYLING -------------------- */
+
+	@mixin placeholder($color:$placeholder) {
+		::-webkit-input-placeholder { color: $color; }
+		:-moz-placeholder { color: $color; }
+		::-moz-placeholder { color: $color; }
+		:-ms-input-placeholder { color: $color!important; }
+		::-ms-input-placeholder { color: $color!important; }
+		::placeholder { color: $color; }
+	}
+
+/* -------------------- ASPECT RATIO (first child class .aspect-ratio ) -------------------- */
+/* -------------------- ASPECT RATIO (first child class .aspect-ratio ) -------------------- */
+
+	@mixin aspect-ratio($width, $height) {
+		position: relative;
+		&:before {
+			display: block;
+			content: "";
+			width: 100%;
+			padding-top: ($height / $width) * 100%;
+		}
+		> .ar-content {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+		}
+	}
+
+/* -------------------- DISPLAY -------------------- */
+/* -------------------- DISPLAY -------------------- */
+
+	@mixin display($type:block){
+
+		@if $type == "flex" {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: -moz-box;
+			display: flex;
+		} @else {
+			display: $type;
+		}
+		
+	}
+
+/* -------------------- BOX SHADOW -------------------- */
+/* -------------------- BOX SHADOW -------------------- */
+
+	@mixin box-shadow($content,$hex,$rgba){
+		-webkit-box-shadow: $content $rgba;
+		-moz-box-shadow: $content $rgba;
+		box-shadow: $content $hex;
+		box-shadow: $content $rgba;
+	}
+
+/* -------------------- CLEARFIX -------------------- */
+/* -------------------- CLEARFIX -------------------- */
+
+	@mixin clearFix(){
+
+		&:before,
+		&:after {
+			content: ""; 
+			display: table; 
+		}
+
+		&:after {
+			display: block;
+			clear: both;
+			height: 1px;
+			margin-top: -1px;
+			visibility: hidden;
+		}
+
+		&{
+			*zoom: 1;
+		}
+		
+	}
+
+/* -------------------- CLEAR FORM STYLE -------------------- */
+/* -------------------- CLEAR FORM STYLE -------------------- */
+
+	@mixin clear-form-style(){
+		background: none;
+		border-radius: 0;
+		border: none;
+		box-shadow: none;
+		outline: none;
+	}
+
+/* -------------------- POINTER EVENTS -------------------- */
+/* -------------------- POINTER EVENTS -------------------- */
+
+	@mixin pointer-events($value) {
+		-moz-pointer-events: $value;
+		-webkit-pointer-events: $value;
+		-o-pointer-events: $value;
+		-ms-pointer-events: $value;
+		pointer-events: $value;
+	}
+
+/* -------------------- TRANSITION ALL VALUES -------------------- */
+/* -------------------- TRANSITION ALL VALUES -------------------- */
+
+	@mixin transall($speed:250ms){
+		-webkit-transition: all $speed ease-in-out;
+		-moz-transition: all $speed ease-in-out;
+		-o-transition: all $speed ease-in-out;
+		transition: all $speed ease-in-out;
+	}
+
+/* -------------------- TRANSFORM -------------------- */
+/* -------------------- TRANSFORM -------------------- */
+
+	@mixin transform($content){
+		-webkit-transform: $content;
+		-moz-transform: $content;
+		-ms-transform: $content;
+		-o-transform: $content;
+		transform: $content;
+	};
+
+/* -------------------- BORDERS -------------------- */
+/* -------------------- BORDERS -------------------- */
+
+	@mixin border($sides, $width, $style, $color) {
+
+		@if $sides == "t" {
+			border-bottom: none;
+			border-left: none;
+			border-right: none;
+			border-top: $width $style $color;
+		} @else if $sides == "r" {
+			border-bottom: none;
+			border-left: none;
+			border-right: $width $style $color;
+			border-top: none;
+		} @else if $sides == "b" {
+			border-bottom: $width $style $color;
+			border-left: none;
+			border-right: none;
+			border-top: none;
+		} @else if $sides == "l" {
+			border-bottom: none;
+			border-left: $width $style $color;
+			border-right: none;
+			border-top: none;
+		} @else if $sides == "tr" {
+			border-bottom: none;
+			border-left: none;
+			border-top: $width $style $color;
+			border-right: $width $style $color;
+		} @else if $sides == "tb" {
+			border-bottom: $width $style $color;
+			border-left: none;
+			border-right: none;
+			border-top: $width $style $color;
+		} @else if $sides == "tl" {
+			border-bottom: none;
+			border-left: $width $style $color;
+			border-right: none;
+			border-top: $width $style $color;
+		} @else if $sides == "trb" {
+			border-bottom: $width $style $color;
+			border-left: none;
+			border-right: $width $style $color;
+			border-top: $width $style $color;
+		} @else if $sides == "trl" {
+			border-bottom: none;
+			border-left: $width $style $color;
+			border-right: $width $style $color;
+			border-top: $width $style $color;
+		} @else if $sides == "tbl" {
+			border-bottom: $width $style $color;
+			border-left: $width $style $color;
+			border-right: none;
+			border-top: $width $style $color;
+		} @else if $sides == "rbl" {
+			border-bottom: $width $style $color;
+			border-left: $width $style $color;
+			border-right: $width $style $color;
+			border-top: none;
+		} @else if $sides == "rl" {
+			border-bottom: none;
+			border-left: $width $style $color;
+			border-right: $width $style $color;
+			border-top: none;
+		} @else if $sides == "bl" {
+			border-bottom: $width $style $color;
+			border-left: $width $style $color;
+			border-right: none;
+			border-top: none;
+		}
+	}
+
+/* -------------------- GRAYSCALE CSS IMAGE FILTER -------------------- */
+/* -------------------- GRAYSCALE CSS IMAGE FILTER -------------------- */
+
+	@mixin image_grayscale($value) {
+	    -webkit-filter: #{"grayscale(#{$value})"};
+	    -moz-filter: #{"grayscale(#{$value})"};
+	    filter:#{"grayscale(#{$value})"};
+	}
+
+/* -------------------- MATERIAL SHADOWS -------------------- */
+/* -------------------- MATERIAL SHADOWS -------------------- */
+
+	@mixin materialShadow($level: 1){
+
+	    @if $level == 1 {
+	        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	    } @else if $level == 2 {
+	        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	    } @else if $level == 3 {
+	        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	    } @else if $level == 4 {
+	        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	    } @else if $level == 5 {
+	        box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+	    }
+
+	}
+
+/* -------------------- TRANSFORM SCALE -------------------- */
+/* -------------------- TRANSFORM SCALE -------------------- */
+
+	@mixin scale($value: 1){
+		-moz-transform: scale($value);
+		-webkit-transform: scale($value);
+		-o-transform: scale($value);
+		-ms-transform: scale($value);
+		transform: scale($value);
+	}
+
+/* ------------------------------------------ Vertical Center ------------------------------------------ */
+/* ------------------------------------------ Vertical Center ------------------------------------------ */
+
+	@mixin vertical-align {
+	    position: relative;
+	    top: 50%;
+	    -webkit-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	    transform: translateY(-50%);
+	}
+
+/* ------------------------------------------ THE TRIANGLE TAIL ------------------------------------------ */
+/* ------------------------------------------ THE TRIANGLE TAIL ------------------------------------------ */
+
+	@mixin triangle($color:red,$direction:bottom,$length:15px,$width:6px){
+
+		&:after {	
+			border-style:solid;
+			content:"";
+			display:block;
+			position:absolute;
+			width:0;
+			z-index: 10;
+
+			@if $direction == top {
+				border-color:$color rgba(255,255,255,0.0);
+				border-width:0 $width $length;
+				bottom:auto;
+				left:50%;
+				margin:0 0 0 (-$width);
+				right:auto;
+				top:-$length;
+
+			} @else if $direction == right {
+				border-color:rgba(255,255,255,0) $color;
+				border-width:$width 0 $width $length;
+				bottom:auto;
+				left:auto;
+				margin:(-$width) 0 0 0;
+				right:-$length;
+				top:50%;
+
+			} @else if $direction == left {
+				border-color:rgba(255,255,255,0) $color;
+				border-width:$width $length $width 0;
+				bottom:auto;
+				left:-$length;
+				margin:(-$width) 0 0 0;
+				right: auto;
+				top: auto;
+
+			} @else {
+				border-color: $color rgba(255,255,255,0);
+				border-width:$length $width 0;
+				bottom:-$length;
+				left:50%;
+				margin:0 0 0 (-$width);
+				right: auto;
+				top: auto;
+			}
+
+		}
+
+	}

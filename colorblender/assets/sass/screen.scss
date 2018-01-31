@@ -1,0 +1,354 @@
+html,body {
+height: 100%;
+}
+
+body {
+background-color: $brand_gray;
+@include font(sans);
+overflow: auto;
+}
+
+form {
+margin: 0;
+}
+
+// ------------------------ MAIN HEADER ------------------------ //
+// ------------------------ MAIN HEADER ------------------------ //
+
+	#main-header {
+	background-color: $brand_dark;
+
+		#main-title {
+		margin: 0;
+		padding: 15px 0;
+
+			#main-logo {
+			display: block;
+			height: auto;
+			margin: 0 auto;
+			width: 250px;
+			}
+
+		}
+
+	}
+
+// ------------------------ NOTIFICATIONS BAR ------------------------ //
+// ------------------------ NOTIFICATIONS BAR ------------------------ //
+	
+	#notifications {
+	background-color: $brand_brown-lite;
+	color: $brand_brown;
+	@include font(condensed);
+	left: 0;
+	@include materialShadow(2);
+	padding: 10px;
+	position: fixed;
+	text-align: center;
+	top: -100px;
+	width: 100%;
+	z-index: 100;
+	@include transall();
+
+		.val {
+		color: $brand_dark;
+		font-weight: 700;
+		}
+		
+		&.is-showing {
+		top: 0px;
+		@include transall();
+		}
+
+	}
+
+// ------------------------ MAIN CONTENT WRAP ------------------------ //
+// ------------------------ MAIN CONTENT WRAP------------------------ //
+	
+	#content-wrap {
+	@include display-flex;
+	@include flex-direction(column);
+	min-height: 100%;
+
+		#main-content {
+		@include display-flex;
+		padding: 30px;
+		}
+
+	}
+
+// ------------------------ MAIN FOOTER------------------------ //
+// ------------------------ MAIN FOOTER------------------------ //
+
+	#main-footer {
+	@include display-flex;
+	background-color: $brand_dark;
+	bottom: 0;
+	color: $brand_gray;
+	margin: auto auto 0;
+	padding: 15px 0;
+	text-align: right;
+	width: 100%;
+		
+		a {
+		color: $w;
+		font-weight: 700;
+		text-decoration: none;
+		@include transall();
+			
+			&:hover {
+			color: #74b8de;
+			@include transall();
+			}
+
+		}
+
+		#created,
+		#inspired {
+		@include font-size(14);
+
+			@media all and (max-width: 575px) {
+			@include font-size(12);
+			text-align: center;
+			}
+
+		}
+
+		#foot-logo-wrap {
+			
+			#foot-logo {
+			height: 100%;
+			width: auto;
+			}
+			
+			@media all and (max-width: 575px) {
+				
+				a {
+				display:block;
+				width: 70px;
+				margin: 15px auto;
+
+					#foot-logo {
+					height: auto;
+					width: 100%;
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+// ------------------------ INPUT BLOCK ------------------------ //
+// ------------------------ INPUT BLOCK ------------------------ //
+
+	#input-block {
+	@include display-flex;
+	@include flex-direction(column);
+
+		#first-color-col,
+		#last-color-col,
+		#swatch-count-col {
+		@include align-items(center);
+		@include display-flex;
+		@include justify-content(center);
+
+			@media all and (max-width: 767px) {
+			margin: auto;
+			}
+
+		}
+
+		#first-color-col {
+		margin: 0 auto auto auto;
+		}
+
+		#swatch-count-col {
+		background-color: $brand_brown;
+		border-radius: 4px;
+		margin: auto;
+		@include flex-direction(row);
+		padding: 15px;
+			
+			.title {
+			@include align-items(center);
+			color: $w;
+			@include display-flex;
+			@include font-size(16);
+			margin-bottom: 0;
+			margin-right: 15px;
+			font-weight: 700;
+
+				@media all and (max-width: 767px) {
+				@include justify-content(center);
+				margin-bottom: 15px;
+				margin-right: 0;
+				text-align: center;
+				}
+
+			}
+
+			#swatchCount {
+			@include display-flex;
+			float: right;
+			}
+
+			@media all and (max-width: 767px) {
+			@include flex-direction(column);
+			margin: auto;
+			}
+
+		}
+
+		#last-color-col {
+		margin: auto auto 0 auto;
+		}
+
+		.color-field {
+		@include font(mono);
+		text-transform: uppercase;
+		}
+
+		@media all and (max-width: 767px) {
+
+			#first-color-col,
+			#last-color-col,
+			#swatch-count-col {
+			margin: 0 auto 15px;
+			}
+
+		}
+
+	}
+
+// ------------------------ OUTPUT BLOCK ------------------------ //
+// ------------------------ OUTPUT BLOCK ------------------------ //
+
+	#output-block {
+
+		#swatches {
+		@include flex-direction(column);
+
+			.swatch {
+			border: 1px solid transparent;
+			@include transall();
+
+				.color {
+				background-color: $brand_brown-lite;
+				border-radius: 4px;
+				cursor: pointer;
+				@include transall();
+				}
+
+				.info {
+				@include align-items(center);
+				@include display-flex;
+				@include flex-direction(row);
+				@include justify-content(flex-end);
+				padding: 15px;
+
+					.hex,
+					.rgb {
+					@include align-items(center);
+					@include display-flex;
+					margin-right: 15px;
+					
+						.title {
+						@include display-flex;
+						@include font(condensed);
+						margin-right: 5px;
+						}
+
+						.code-wrap {
+						background-color: $w;
+						border-radius: 4px;
+						@include display-flex;
+						@include flex-direction(row);
+						padding: 5px 10px;
+
+							.code {
+							@include display-flex;
+							@include font(mono);
+							@include font-size(14);
+							}
+
+							.clipboard-btn {
+							@include align-items(center);
+							@include display-flex;
+							margin: auto 0 auto auto;
+
+								.clipboard-icon {
+								display: block;
+								height: 18px;
+								width: auto;
+								}
+
+							}
+
+						}
+
+						@media all and (max-width: 767px) {
+						@include justify-content(flex-end);
+						margin-right: 0;
+
+							&:first-child {
+							margin-bottom: 15px;
+							}
+
+						}
+
+					}
+
+					.hex {
+						
+						.code-wrap {
+						min-width: 105px;
+
+							.code {
+							text-transform: uppercase;
+							}
+
+						}
+
+					}
+
+					.rgb {
+
+						.code-wrap {
+						min-width: 180px;
+						}
+
+					}
+
+					&.black {
+						.title { color: $b; }
+					}
+
+					&.white {
+						.title { color: $w; }
+					}
+
+					@media all and (max-width: 767px) {
+					@include align-items(flex-end);
+					@include flex-direction(column);
+					@include justify-content(flex-end);
+					}
+
+				}
+			
+				&:hover {
+
+					.color {
+					background-color: darken($brand_gray,10%);
+					@include transall();
+					}
+					
+				}
+
+			}
+
+		}
+
+	}
