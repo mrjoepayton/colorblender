@@ -1,2 +1,2 @@
 # colorblender
-grab of the meyerweb color blender tool
+Rebuild of the meyerweb color blender tool
